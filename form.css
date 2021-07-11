@@ -42,3 +42,25 @@ input[type="text"]:focus {
 #lname {
     min-width: 35.5%;
 }
+
+button {
+    padding: 10px;
+    background-color: #29b6f6;
+    border: none;
+    display: block;
+    margin: 20px auto;
+    width: 30%;
+    border-radius: 10px;
+}
+
+p#result {
+    background-color: #f1faee;
+    width: 45%;
+    margin: 50px auto auto auto;
+    border-top: 12px solid #457b9d;
+    border-radius: 12px;
+    display: none;
+    padding: 24px;
+    font-size: 20px;
+    line-height: 1.75em;
+}
