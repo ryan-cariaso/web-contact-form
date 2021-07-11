@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Contact Form</title>
+		<link rel="stylesheet" href="form.css">
+	</head>
+
+	<body>
+		<div id="form">
+			<div id="header">
+				<h1>Talk to us!</h1>
+				<p class="require">* Required</p>
+			</div>
+			<div class="input" id="a">
+				<p>Full Name: <span class="require">*</span></p>
+				<input type="text" placeholder="First" id="fname" />
+				<input type="text" placeholder="M.I." id="mi" />
+				<input type="text" placeholder="Last" id="lname" />
+			</div>
+			<div class="input" id="b">
+				<p>Email: <span class="require">*</span></p>
+				<input type="text" placeholder="Email" id="email" />
+			</div>
+			<div class="input" id="c">
+				<p>Contact Reason: <span class="require">*</span></p>
+				<select name="reason" id="reason">
+					<option value="qu">Query</option>
+					<option value="fe">Feedback</option>
+					<option value="co">Complaint</option>
+					<option value="ot">Other</option>
+				</select>
+			</div>
+			<div class="input" id="d">
+				<p id="comment">Please explain contact reason: <span class="require">*</span></p>
+				<textarea id="commentText" maxlength="250"></textarea>
+				<span id="counter">0/250</span>
+			</div>
+			<div id="button">
+				<button onclick="submit();">Submit</button>
+			</div>
+		</div>
+		<p id="result"></p>
+		<script src="form.js"></script>
+	</body>
+
+</html>
