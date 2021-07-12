@@ -64,3 +64,33 @@ p#result {
     font-size: 20px;
     line-height: 1.75em;
 }
+
+textarea {
+  width: 95%;
+  height: 100px;
+  resize: vertical;
+}
+
+.value {
+  color: blue;
+  font-weight: bold;
+  border-bottom: 1px solid blue;
+  position: relative;
+  left: 5px;
+}
+
+span#counter {
+  font-size: 12px;
+  position: relative;
+  float: right;
+  margin-right: 5px;
+}
+
+#smalltext {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+#comment {
+  margin-bottom: 0;
+}
