@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-	<head>
-		<meta charset="UTF-8">
-		<title>Contact Form</title>
-		<link rel="stylesheet" href="form.css">
-	</head>
-
-	<body>
-		<div id="form">
-			<div id="header">
-				<h1>Talk to us!</h1>
-				<p class="require">* Required</p>
-			</div>
-			<div class="input" id="a">
-				<p>Full Name: <span class="require">*</span></p>
-				<input type="text" placeholder="First" id="fname" />
-				<input type="text" placeholder="M.I." id="mi" />
-				<input type="text" placeholder="Last" id="lname" />
-			</div>
-			<div class="input" id="b">
-				<p>Email: <span class="require">*</span></p>
-				<input type="text" placeholder="Email" id="email" />
-			</div>
-			<div class="input" id="c">
-				<p>Contact Reason: <span class="require">*</span></p>
-				<select name="reason" id="reason">
-					<option value="qu">Query</option>
-					<option value="fe">Feedback</option>
-					<option value="co">Complaint</option>
-					<option value="ot">Other</option>
-				</select>
-			</div>
-			<div class="input" id="d">
-				<p id="comment">Please explain contact reason: <span class="require">*</span></p>
-				<textarea id="commentText" maxlength="250"></textarea>
-				<span id="counter">0/250</span>
-			</div>
-			<div id="button">
-				<button onclick="submit();">Submit</button>
-			</div>
-		</div>
-		<p id="result"></p>
-		<script src="form.js"></script>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="form.css">
+  <script src="form.js"></script>
+</head>
+<body>
+<section>
+  <div class = "a">
+    <h1>Talk to us!</h1>
+  </div>
+  <div class="content-box">
+    <form onsubmit="return results();" method="post" mailto:my@site.com>
+      <label for="fname">First Name: </label>
+      <input type="text" id="fname" required>
+      <label for="lname">Last Name: </label>
+      <input type="text" id="lname" required>
+      <label for="email">Email: </label>
+      <input type="text" name="email" id="email" required>
+      <label for="reason">Choose reason for contact: </label>
+      <select name="reason" id="reason" required>
+        <option value="Query">Query</option>
+        <option value="Feedback">Feedback</option>
+        <option value="Complaint">Complaint</option>
+        <option value="Other">Other</option>
+      </select>
+      <label for="comment">Comment</label>
+      <textarea name="comment" id="comment" cols="40" rows="10" placeholder="Enter comment here" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+</body>
 
 </html>
